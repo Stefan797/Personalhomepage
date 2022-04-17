@@ -1,0 +1,39 @@
+<div id="projects" *ngIf="!smartphoneversion" class="projects_container page-p">
+    <div class="projects_headline_container ea">
+        <h2>Projects</h2>
+    </div>
+
+    <div [style]="{'flex-direction': i % 2 == 0 ? 'row' : 'row-reverse'}"
+        *ngFor="let project of allProjects; let i = index" class="projects_box esb">
+        <img src="assets/img/{{ project['img'] }}">
+        <div class="description_box ecc">
+            <h3>{{project['name']}}</h3>
+            <span>{{project['description']}}</span>
+
+            <div class="use_buttons_container">
+                <button (click)="visitProject(project['url'])">Try out</button>
+                <button (click)="visitProject(project['doc'])">Doc</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects" *ngIf="smartphoneversion" class="projects_container_s page-p-s">
+    <div class="projects_headline_container_s">
+        <h2>Projects</h2>
+    </div>
+
+    <div *ngFor="let project of allProjects; let i = index" class="projects_box_s page-p-s ecc">
+        <div (mouseenter)="showCard(i)" (mouseleave)="hideCard(i)" class="tile-container">
+            <img src="assets/img/{{ project['img'] }}">
+            <div class="button_container_over_picture ecc" [class.hide]="!hoveredCard[i]">
+                <button (click)="visitProject(project['url'])">Try out</button>
+                <button (click)="visitProject(project['doc'])">Doc</button>
+            </div>
+        </div>
+        <div class="description_box_s ecc">
+            <h3>{{project['name']}}</h3>
+            <span>{{project['description']}}</span>
+        </div>
+    </div>
+</div>

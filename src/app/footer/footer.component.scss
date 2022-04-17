@@ -1,0 +1,17 @@
+.footer_container {
+    height: 15vh;
+    a {
+        text-decoration: none;
+        color: black;
+        margin-left: 4px;
+        margin-right: 4px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+}

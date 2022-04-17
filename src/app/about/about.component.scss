@@ -1,0 +1,116 @@
+.about_container {
+    height: 100vh;
+    padding-top: 20px;
+    .about_headline_container {
+        height: 100px;
+        //background-color: rgba(0,0,0, 0.2);
+        margin-top: 50px;
+        margin-bottom: 20px;
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 54px;
+        }
+    }
+
+    .first_text_container {
+        color: black;
+        margin-bottom: 8px;
+        margin-top: 20px;
+        //background-color: rgba(0,0,0, 0.2);
+    }
+
+    .between_text_container {
+        // background-color: rgba(0,0,0, 0.2);
+        min-height: 500px;
+        margin-top: 20px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .text_again {
+            position: absolute;
+            left: 14px;
+            bottom: -15px;
+            width: 800px;
+            height: 150px;
+        }
+
+        .mycontact_data_box {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            width: 230px;
+            height: 220px;
+            background-color: #fee383;
+            padding: 8px;
+            border-radius: 2px;
+            span {
+                color: #999999;
+                font-size: 18px;
+                margin-bottom: 8px;
+                margin-top: 16px;
+                padding: 4px;
+            }
+            p {
+                padding: 4px;
+            }
+        }
+    }
+
+    .second_text_container {
+        margin-top: 20px;
+        //background-color: rgba(0,0,0, 0.2);
+        color: black;
+    }
+}
+
+// Classes applied to smartphone version
+
+.about_container_s {
+    height: fit-content;
+    .about_headline_container_s {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 54px;
+        }
+    }
+
+    .between_text_container_s {
+        min-height: 500px;
+        margin-top: 20px;
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .mycontact_data_box_s {
+            width: 180px;
+            height: 180px;
+            background-color: #fee383;
+            padding: 8px;
+            border-radius: 2px;
+            margin-top: -100px;
+            margin-bottom: 30px;
+            span {
+                color: #999999;
+                font-size: 18px;
+                margin-bottom: 8px;
+                margin-top: 16px;
+                padding: 4px;
+            }
+            p {
+                padding: 4px;
+            }
+        }
+    }
+
+    .second_text_container_s {
+        color: black;
+    }
+}

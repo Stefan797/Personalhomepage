@@ -1,0 +1,48 @@
+<div *ngIf="!smartphoneversion" class="home_container">
+    <div class="first_container ecc">
+        <span>Hello</span>
+        <span>I'm Stefan</span>
+        <span>Hübner</span>
+        <div class="cv_links_container">
+            <a href="https://github.com/Stefan797" target="_blank">Git</a>
+            <a href="https://www.linkedin.com/in/stefan-h%C3%BCbner-0ba258234/" target="_blank">In</a>
+            <!-- <a href="https://github.com/Stefan797" target="_blank">Xing</a> -->
+        </div>
+        <div class="button_container">
+            <button (click)="scroll('projects')">SEE MY PORTFOLIO</button>
+        </div>
+    </div>
+
+    <div class="second_container">
+        <div class="auxiliary_container_pa">
+            <div class="navigation_container ec">
+                <a (click)="scroll('projects')">Projects</a>
+                <a (click)="scroll('about')">About</a>
+                <a (click)="scroll('contact')">Contact</a>
+            </div>
+            <div class="picture_container">
+                <img src="../assets/img/IMG_3672black-white.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="smartphoneversion" class="home_container_s">
+    <div class="picture_container_s">
+        <img src="../assets/img/IMG_3672black-white.jpg">
+    </div>
+    <div class="first_container_s page-p-s ecsc">
+        <span>Hello</span>
+        <span>I'm Stefan</span>
+        <span>Hübner</span>
+        <div class="cv_links_container">
+            <a href="https://github.com/Stefan797" target="_blank">Git</a>
+            <a href="https://www.linkedin.com/in/stefan-h%C3%BCbner-0ba258234/" target="_blank">In</a>
+            <!-- <a href="">Xing</a> -->
+        </div>
+
+    </div>
+    <div class="button_container_s page-p-s">
+        <button (click)="scroll('projects')">SEE MY PORTFOLIO</button>
+    </div>
+</div>

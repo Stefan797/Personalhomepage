@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Personalhomepage';
+
+  ngOnInit(): void {
+    console.log('meine Bildschirmbreite ist', window.innerWidth);
+  }
 }

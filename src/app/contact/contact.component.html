@@ -1,0 +1,33 @@
+<div id="contact" *ngIf="!smartphoneversion" class="contact_container ecs page-p">
+    <div class="salutation_container">
+        <h2>Let's talk business</h2>
+        <!-- <h2>Kontakt Me</h2> -->
+        <span>Now that you know a lot about me, let me know if you are interested to work with me.</span>
+        <!-- <span>For free to kontakt me for p</span> -->
+    </div>
+    <form class="contact_box ecsc" action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
+        <p>Name</p>
+        <input onfocus="this.placeholder = ''" autocomplete="off" name="name" type="text" required>
+        <p>Email</p>
+        <input onfocus="this.placeholder = ''" autocomplete="off" name="email" required>
+        <p>Message</p>
+        <textarea onfocus="this.placeholder = ''" autocomplete="off"  name="message" type="text"  required></textarea>
+        <button type="submit">LET'S GET STARTED</button>
+    </form>
+</div>
+
+<div id="contact" *ngIf="smartphoneversion" class="contact_container_s ecc page-p-s">
+    <div class="salutation_container_s">
+        <h2>Let's talk<br><br> business</h2>
+        <span>Now that you know a lot about me, let me know if you are interested to work with me.</span>
+    </div>
+    <div class="contact_box_s ecsc">
+        <p>Name</p>
+        <input onfocus="this.placeholder = ''" autocomplete="off" type="text" required>
+        <p>Email</p>
+        <input onfocus="this.placeholder = ''" autocomplete="off" name="email" required>
+        <p>Message</p>
+        <textarea onfocus="this.placeholder = ''" autocomplete="off"  name="subject" type="text"  required></textarea>
+        <button>LET'S GET STARTED</button>
+    </div>
+</div>
