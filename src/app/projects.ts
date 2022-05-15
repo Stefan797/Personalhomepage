@@ -5,7 +5,7 @@ export const allProjects = [
     description: 'A backend with login tasks objects rest-api and test Html at board. This is a project for a group project in the Frontend course.',
     img: 'Join_backend_project_image.PNG',
     url: 'https://kanbanboard12.herokuapp.com/api/task/1',
-    doc: ''
+    doc: 'https://kanbanboard12.herokuapp.com/static/docs/_build/html/index.html'
   },
   {
     name: 'Django Chat App',
@@ -13,8 +13,8 @@ export const allProjects = [
     description: 'This simple chat messenger shows how quickly you can create a usable program of this kind with django. Just search for stefan_huebner in the settings and we can chat with each other there too.',
     // description: 'This simple chat messenger shows how quickly you can create a usable program of this kind with django. Just search for stefan_huebner in the settings and we can chat with each other there too.',
     img: 'Django_chat_app_project_image.PNG',
-    url: '',
-    doc: ''
+    url: 'https://stefanh.pythonanywhere.com/',
+    doc: 'https://stefanh.pythonanywhere.com/static/docs/_build/html/index.html'
   },
   {
     name: 'Flutter-sorts',
@@ -29,14 +29,14 @@ export const allProjects = [
     description: 'This is a Jump an Run Game. You have to jump over chickens and collect Tabasco. In the final level, you have to defeat the Pollo Loco.',
     img: 'El_Polo_Loco_project_image.PNG',
     url: 'https://stefanhuebner97.de/ElPolloLoco',
-    doc: 'https://stefanhuebner97.de/ElPolloLoco/models/out'
+    doc: 'https://stefanhuebner97.de/ElPolloLoco/out'
   },
   {
     name: 'Pokedex',
     description: 'This Pokédex shows information about three generation of Pokémon.',
     img: 'Pokédex_project_image.PNG',
     url: 'https://stefanhuebner97.de/Pokédex/',
-    doc: 'https://stefanhuebner97.de/Pokédex/out'
+    doc: 'https://stefanhuebner97.de/Pokédex/js/out'
   },
   {
     name: 'Kochwelt',
