@@ -2,23 +2,27 @@
     padding-top: 20px;
     .projects_headline_container {
         height: 100px;
-        // background-color: rgba(0,0,0, 0.2);
-        margin-bottom: 30px;
         h2 {
-            font-family: "Poppins", sans-serif;
-            font-size: 54px;
+            font-size: 70px;
+            font-weight: 800;
         }
     }
-    .projects_box {
-        // background-color: rgba(0,0,0, 0.2);
+    .projects_boxes_container {
+        // background-color: rgba(0, 0, 0, 0.2);
+        height: 35vh;
+        width: 100%;
         margin-top: 30px;
-        img {
-            border-radius: 2px;
-            height: 350px;
+        .project_image_container {
+            height: 100%;
             width: 50%;
-            object-fit: cover;
-            // margin-right: 30px;
+            img {
+                border-radius: 4px;
+                height: 100%;
+                width: 100%;
+                // object-fit: contain;
+            }
         }
+        
         .description_box {
             width: 50%;
             height: 100%;
@@ -27,26 +31,29 @@
             // background-color: rgba(0, 0, 0, 0.2);
             h3 {
                 margin-bottom: 30px;
-                font-size: 24px;
+                font-size: 30px;
                 color: #999999;
             }
             span {
                 text-align: center;
                 font-size: 18px;
                 margin-bottom: 30px;
+                color: #999999;
             }
         }
     }
 
     .use_buttons_container {
+        width: 100%;
         margin-top: 30px;
+        // background-color: rgba(0, 0, 0, 0.5);
         button {
-            background-color: #fee383;
+            background-color: var(--secondpagecolor);
             border: none;
             height: 50px;
-            width: 160px;
+            width: 25%;
             color: #999999;
-            font-size: 18px;
+            font-size: 24px;
             margin-left: 16px;
             margin-right: 16px;
             &:hover {
@@ -56,11 +63,11 @@
     }
 }
 
-@media (max-width: 1025px) {
-    .page-p {
-        padding: 0 8% 0 8%;
-    }
-}
+// @media (max-width: 1025px) {
+//     .page-p {
+//         padding: 0 8% 0 8%;
+//     }
+// }
 
 // Classes applied to smartphone version
 
@@ -69,8 +76,8 @@
         margin-top: 50px;
         margin-bottom: 80px;
         h2 {
-            font-family: "Poppins", sans-serif;
             font-size: 54px;
+            font-weight: 800;
         }
     }
     .projects_box_s {
@@ -83,6 +90,7 @@
                 color: #999999;
             }
             span {
+                color: #999999;
                 text-align: center;
             }
         }
@@ -93,7 +101,75 @@
                 border-radius: 2px;
                 height: 350px;
                 width: 100%;
+                margin-bottom: 30px;
+                animation: blurOut 1s;
                 object-fit: cover;
+            }
+            &:hover {
+                img {
+                    animation: blurIn 2s ease-in-out;
+                    filter: opacity(80%);
+                }
+            }
+            .button_container_over_picture {
+                position: absolute;
+                top: 0;
+                height: 350px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                button {
+                    height: 50px;
+                    width: 160px;
+                    margin-top: 20px;
+                    border: 2px solid white;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 4px;
+                }
+            }
+            .hide {
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Classes applied to tablet version
+
+.projects_container_t {
+    .projects_headline_container_t {
+        margin: 50px 0 80px 0;
+        h2 {
+            font-size: 54px;
+            font-weight: 800;
+        }
+    }
+    .projects_box_t {
+        width: 100%;
+        margin-top: 30px;
+
+        .description_box_t {
+            width: 100%;
+            h3 {
+                font-size: 30px;
+                color: #999999;
+            }
+            span {
+                font-size: 22px;
+                color: #999999;
+                text-align: center;
+                line-height: 130%;
+            }
+        }
+
+        .tile-container {
+            width: 100%;
+            position: relative;
+            img {
+                border-radius: 2px;
+                height: 350px;
+                width: 100%;
                 margin-bottom: 30px;
                 animation: blurOut 1s;
             }

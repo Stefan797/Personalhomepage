@@ -1,13 +1,15 @@
 <header>
     <img routerLink="/home" src="assets/img/myLogo.png">
 
-    <div class="links_container" *ngIf="!smartphonemenu">
+    <div class="links_container">
         <a routerLink="/home">Home</a>
         <a routerLink="/home">About</a>
         <a routerLink="/home">Projects</a>
     </div>
 
-    <button mat-icon-button *ngIf="smartphonemenu" class="pin-right-upper-corner" [matMenuTriggerFor]="smartphoneMenu">
+    <!--umschreiben matMenu geht nicht also weg -->
+
+    <!-- <button mat-icon-button *ngIf="smartphonemenu" class="pin-right-upper-corner" [matMenuTriggerFor]="smartphoneMenu">
         <mat-icon>view_headline</mat-icon>
     </button>
 
@@ -18,5 +20,5 @@
             <a routerLink="/">Projects</a>
             <a routerLink="/">Contact</a>
         </div>
-    </mat-menu>
+    </mat-menu> -->
 </header>

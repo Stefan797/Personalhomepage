@@ -1,33 +1,55 @@
-<div id="contact" *ngIf="!smartphoneversion" class="contact_container ecs page-p">
+<div id="contact" *ngIf="!smartphoneversion && !tabletversion" class="contact_container page-p">
     <div class="salutation_container">
-        <h2>Let's talk business</h2>
-        <!-- <h2>Kontakt Me</h2> -->
-        <span>Now that you know a lot about me, let me know if you are interested to work with me.</span>
-        <!-- <span>For free to kontakt me for p</span> -->
+        <h2>Contact Me</h2>
+        <div class="contact_text_container">
+            <span>If you like my page, please feel free to contact me. I look forward to every conversation.</span>
+        </div>
     </div>
-    <form class="contact_box ecsc" action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
+    <form class="contact_box" action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
         <p>Name</p>
         <input onfocus="this.placeholder = ''" autocomplete="off" name="name" type="text" required>
         <p>Email</p>
         <input onfocus="this.placeholder = ''" autocomplete="off" name="email" required>
         <p>Message</p>
-        <textarea onfocus="this.placeholder = ''" autocomplete="off"  name="message" type="text"  required></textarea>
+        <textarea onfocus="this.placeholder = ''" autocomplete="off" name="message" type="text" required></textarea>
         <button type="submit">LET'S GET STARTED</button>
     </form>
 </div>
 
 <div id="contact" *ngIf="smartphoneversion" class="contact_container_s ecc page-p-s">
     <div class="salutation_container_s">
-        <h2>Let's talk<br><br> business</h2>
-        <span>Now that you know a lot about me, let me know if you are interested to work with me.</span>
+        <h2>Contact Me</h2>
+        <div class="contact_text_container">
+            <span>If you like my page, please feel free to contact me. I look forward to every conversation.</span>
+        </div>
     </div>
     <div class="contact_box_s ecsc">
+        <form action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
+            <p>Name</p>
+            <input onfocus="this.placeholder = ''" autocomplete="off" name="name" type="text" required>
+            <p>Email</p>
+            <input onfocus="this.placeholder = ''" autocomplete="off" name="email" required>
+            <p>Message</p>
+            <textarea onfocus="this.placeholder = ''" autocomplete="off" name="message" type="text" required></textarea>
+            <button type="submit">LET'S GET STARTED</button>
+        </form>
+    </div>
+</div>
+
+<div id="contact" *ngIf="tabletversion" class="contact_container_t ecc page-p-t">
+    <div class="salutation_container_t">
+        <h2>Contact Me</h2>
+        <div class="contact_text_container">
+            <span>If you like my page, please feel free to contact me. I look forward to every conversation.</span>
+        </div>
+    </div>
+    <form class="contact_box_t ecsc" action="https://stefanhuebner97.de/SendMail/send_mail_two.php" method="POST">
         <p>Name</p>
-        <input onfocus="this.placeholder = ''" autocomplete="off" type="text" required>
+        <input onfocus="this.placeholder = ''" autocomplete="off" name="name" type="text" required>
         <p>Email</p>
         <input onfocus="this.placeholder = ''" autocomplete="off" name="email" required>
         <p>Message</p>
-        <textarea onfocus="this.placeholder = ''" autocomplete="off"  name="subject" type="text"  required></textarea>
-        <button>LET'S GET STARTED</button>
-    </div>
+        <textarea onfocus="this.placeholder = ''" autocomplete="off" name="message" type="text" required></textarea>
+        <button type="submit">LET'S GET STARTED</button>
+    </form>
 </div>
