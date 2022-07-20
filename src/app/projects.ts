@@ -20,8 +20,8 @@ export const allProjects = [
     name: 'Kanbanboard',
     description: 'This is a Kanbanboard built with angular. Notes can be sorted by projects, which helps you keep track of the boards. Entering the notes is also possible with the voice function. ',
     img: 'Kanban.jpg',
-    url: 'https://stefanhuebner97.de/Fluttersorts/',
-    doc: 'https://stefanhuebner97.de/Fluttersorts/documentation'
+    url: 'https://stefanhuebner97.de/Kanbanboard/',
+    doc: 'https://stefanhuebner97.de/Kanbanboard/documentation'
   },
   {
     name: 'El Pollo Loco',
